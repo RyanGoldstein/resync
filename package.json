@@ -11,10 +11,11 @@
     "url": "https://github.com/RyanGoldstein/resync"
   },
   "keywords": [
-    "asynchronous",
-    "synchronous",
     "async",
+    "asynchronous",
     "sync",
+    "synchronous",
+    "synchronize",
     "callback"
   ],
   "author": "Ryan Goldstein",
