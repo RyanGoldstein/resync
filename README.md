@@ -1,14 +1,14 @@
 resync
 ======
 
-Call a callback when all of your callbacks have been called back!
+Call a callback when all of your callbacks have been called back! A simple synchronization utility for Node.js.
 
 Installation
 ------------
 
-``
+```
 > npm install resync
-``
+```
 
 Usage
 -----
@@ -43,7 +43,7 @@ fs.writeFile("/tmp/writeFile" + e, e, wait.callback(function(err) {
 	return "writeFile";
 }));
 http.get("http://www.github.com/RyanGoldstein/resync", wait.callback("named callback", function(res) { 
-	console.log("Finished writing file"); 
+	console.log("Finished getting web page");
 	return "httpGet";
 }));
 process.on("SIGINT", wait.callback(function() { 
